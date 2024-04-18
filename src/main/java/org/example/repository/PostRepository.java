@@ -3,6 +3,7 @@ package org.example.repository;
 
 import org.example.model.Post;
 import org.example.exception.NotFoundException;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 
 // Stub
+@Repository
 public class PostRepository {
 
     private final ConcurrentHashMap<Long, Post> posts = new ConcurrentHashMap<>();
